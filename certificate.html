@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" type="text/css" href="certificate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="cert-container">
+    <div class="cert-header">
+        <img src="https://media-hosting.imagekit.io//e9af74c2b19743a9/School-of-Engineering-ManagementLogo-1.png?Expires=1833183230&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=k~5Hg-4V8J18uVP2jIiaXMMpDxBN4o3b25Rtl7jCSpJoZLyGVgrZtynf4JqQLFoTBsPebQb3Z6sqZ8XMZ8rdSmx1dQXbhnQnhTMNNuao3Sd5cm65xLodq0BqwbvR1dyY5Vs72MV5-gokqJi-IYtt9ln-lKWClTotC6MA367vUMx2Q3phG-Tgpfm72Tt4-ND4ScxlvZTvhId5afVC0cZplJW3NXlUfu~~Yp8BkBrqM7gtwFwMzEwHQZNChl7Mx~DlYdBZOdz5SNMeVD5zIpRa7cvtMSBTYtpLt8lczqvkY5~KL1-X~ZOekrZsJb26fwkORk14djxaRH~JuCRfb3wMxw__" alt="College Logo">
+    </div>
+    <div class="cert-title">CERTIFICATE</div>
+    <div class="cert-subtitle">OF APPRECIATION</div>
+    <div class="cert-body">
+        <p><strong>The following award is given to</strong></p>
+        <div class="cert-name" id="cert-name"></div>
+        <p>for their achievement in</p>
+        <div class="fw-bold" id="cert-achieve"></div>
+        <p>and proves that they are competent in their field.</p>
+    </div>
+    <div class="cert-footer">
+        <div>
+            <img id="cert-sign1" class="sign" src="signature1.png" alt="Signature">
+            <div>Dr. A. S. Patil<br><small>(Director, DYPSEM)</small></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let name = prompt("Enter Recipient's Name:", "");
+    let achievement = prompt("Enter Achievement:", "");
+
+    document.getElementById("cert-name").innerText = name || "Full Name";
+    document.getElementById("cert-achieve").innerText = achievement || "Achievement";
+
+    let sign1 = prompt("Enter Signature Image URL:", "");
+    document.getElementById("cert-sign1").src = sign1 || "signature1.png";
+
+</script>
+
+</body>
+</html>

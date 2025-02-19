@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+.cert-container {
+    position: relative;
+    width: 900px;
+    height: 640px;
+    background: url('https://png.pngtree.com/png-vector/20230513/ourmid/pngtree-blue-and-gold-modern-certificate-border-vector-png-image_7094473.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    border: 5px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    color: #3e2723;
+}
+
+.cert-header img {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.cert-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #d4af37;
+    margin-top: 20px;
+}
+
+.cert-subtitle {
+    font-size: 24px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.cert-body {
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 10px 30px;
+    line-height: 1.5;
+}
+
+.cert-name {
+    font-family:'Brush Script MT', cursive ;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: ;
+    color: #d4af37;
+    margin: 10px 0;
+}
+
+.cert-footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
